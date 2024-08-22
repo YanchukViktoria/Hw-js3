@@ -1,0 +1,8 @@
+@mixin positioning($disp, $fd, $jc, $al, $gp, $wr){
+    display: $disp;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $al;
+    gap: $gp;
+    flex-wrap: $wr;
+} 

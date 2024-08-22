@@ -1,0 +1,20 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+
+    &-range{
+        @include positioning(flex, _, flex-start, _, _, _);
+    }
+
+    &-inspect{
+        @include positioning(flex, _, space-between, center, _, _);
+    }
+
+    &-guess{
+        display: grid;
+        grid-template-columns: repeat(4, 290px);
+        grid-template-rows: repeat(2, auto);
+        gap: 24px; 
+    }
+}

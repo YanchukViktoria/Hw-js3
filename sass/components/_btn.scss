@@ -1,0 +1,57 @@
+.word-btn{
+    background-color: $set-one-bg-btn;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    margin: 0 auto;
+    display: block;
+    color: white;
+}
+
+.range-btn{
+    background-color: $set-two-warm;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 24px;
+    margin: 50px auto 0 0;
+    display: block;
+    color: white;
+}
+
+.inspect-btn{
+    background-color: $set-three-light;
+    border: none;
+    padding: 16px 32px;
+    color: white;
+    border-radius: 24px;
+    display: block;
+    max-height: 60px;
+}
+
+.guess-btn{
+    background-color: $set-four-netural;
+    color: black;
+    border: none;
+    border-radius: 24px;
+    padding: 12px 30px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    &-first{
+        margin-bottom: 15px;
+    }
+
+    &-range{
+        background-color: $set-four-rich;
+        color: black;
+    }
+}
+
+.reg-btn{
+    background-color: $set-five-dark;
+    color: $set-five-light;
+    padding: 16px 32px;
+    margin: 0 auto;
+    border-radius: 6px;
+    display: block;
+}

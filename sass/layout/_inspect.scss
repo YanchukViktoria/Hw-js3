@@ -1,0 +1,30 @@
+.section-inspect {
+    padding: 100px 0;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.3); /* Напівпрозорий фон */
+    z-index: 1;
+}
+
+.section-inspect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+.inspect-textarea{
+    border: none;
+    border-radius: 24px;
+    resize: none;
+    width: 700px;
+    height: 250px;
+    box-shadow: 
+    10px 10px 20px #b8b8b8,
+    -10px -10px 20px #ffffff;
+    padding: 15px;
+}

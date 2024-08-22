@@ -1,0 +1,56 @@
+
+.form{
+
+    &-front{
+        @include positioning(flex, column, _, center, 20px, _);
+        margin-bottom: 25px;
+    }
+
+    &-back{
+        @include positioning(flex, column, _, center, 10px, _);
+        margin-bottom: 15px;
+    }
+}
+
+
+.form-title{
+    color: $set-five-dark;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+
+    &-front{
+        margin-bottom: 25px;
+    }
+
+    &-back{
+        margin-bottom: 16px;
+    }
+}
+
+.reg-desc{
+    color: $set-five-dark;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.reg-input{
+    border-radius: 6px;
+    border: 1px solid $set-five-br;
+    height: 60px;
+    width: 380px;
+    padding-left: 50px;
+}
+
+.reg-link{
+    position: relative;
+}
+
+.svg-form{
+    position: absolute;
+    left: 12px;
+    top: 18px;
+}

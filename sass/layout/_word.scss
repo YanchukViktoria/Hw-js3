@@ -1,0 +1,8 @@
+.section-word{
+    padding: 100px 0;
+}
+
+.word-wrapper{
+    @include positioning(flex, _, space-evenly, _, _, _);
+    margin-bottom: 50px;
+}

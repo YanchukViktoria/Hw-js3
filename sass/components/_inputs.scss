@@ -1,0 +1,45 @@
+.word-input{
+    border: none;
+    padding: 16px 32px;
+    width: 400px;
+    border-radius: 24px;
+
+        &-first{
+            background-image: linear-gradient(to right, $set-one-gradient-left-first, $set-one-gradient-rifgt-first);
+        }
+
+        &-sec{
+            background-image: linear-gradient(to right, $set-one-gradient-left-sec, $set-one-gradient-rifgt-sec);
+        }
+
+        &:focus-within{
+            outline: none;
+        }
+}
+
+
+.range-input{
+    border: none;
+    padding: 16px 32px;
+    width: 200px;
+    border-radius: 24px;
+
+    &-first{
+        background-color: $set-two-cool;
+    }
+
+    &-sec{
+        background-color: $set-two-pale;
+    }
+
+    &:focus-within{
+        outline: none;
+    }
+}
+
+.guess-input{
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 70px;
+}

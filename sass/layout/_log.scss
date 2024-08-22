@@ -1,0 +1,57 @@
+.section-register{
+    padding: 100px 0;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+    display: none;
+}
+
+.reg-container {
+    margin: 0 auto;
+  width: 500px;
+  max-width: 100%;
+  height: 450px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  perspective: 800px;
+  margin-top: 60px;
+}
+
+.reg-wrapper {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all 600ms ease-out; 
+}
+
+.card {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: #2b2e38;
+  position: absolute;
+  border-radius: 6px;
+  -webkit-transform-style: preserve-3d;
+  background-image: url("../main/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid $set-five-br;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.center-wrap{
+  position: absolute;
+  width: 100%;
+  padding: 0 35px;
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 35px) perspective(100px);
+  z-index: 20;
+  display: block;
+}
+

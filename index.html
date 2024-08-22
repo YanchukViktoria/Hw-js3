@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+
+        </div>
+    </header>
+    <main>
+        <section class="section-word">
+            <div class="container">
+                <div class="word-wrapper">
+                    <input placeholder="Palindrome 1" type="text" class="word-input word-input-first">
+                
+                    <input placeholder="Palindrome 2" type="text" class="word-input word-input-sec">
+                </div>
+
+                <button class="word-btn">Check word</button>
+            </div>
+        </section>
+
+        <section class="section-range">
+            <div class="container container-range">
+                <div class="range-wrapper">
+                    <input placeholder="Number 1" type="text" class="range-input range-input-first">
+                    <input placeholder="Number 2" type="text" class="range-input range-input-sec">
+                    <button class="range-btn">Enter</button>
+                </div>
+
+                <div class="circle">
+                    <div class="circle-path circle-path-arr">
+                        <svg class="svg">
+                            <use href="./symbol-defs.svg#arr"></use>
+                        </svg>
+                    </div>
+                    <div class="circle-path circle-path-first">
+                        <svg class="svg">
+                            <use href="./symbol-defs.svg#1"></use>
+                        </svg>
+                    </div>
+                    <div class="circle-path circle-path-sec">
+                        <svg class="svg">
+                            <use href="./symbol-defs.svg#2"></use>
+                        </svg>
+                    </div>
+                    <div class="circle-path circle-path-third">
+                        <svg class="svg">
+                            <use href="./symbol-defs.svg#3"></use>
+                        </svg>
+                    </div>
+                    <div class="circle-path circle-path-fourth">
+                        <svg class="svg">
+                            <use href="./symbol-defs.svg#4"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-inspect">
+            <div class="container container-inspect">
+                <textarea class="inspect-textarea" name="" id=""></textarea>
+                <button class="inspect-btn">Inspect</button>
+            </div>
+        </section>
+        <section class="section-guess">
+            <div class="container container-guess">
+                <div class="guess-container guess-container-first">
+                    <p class="guess-title">Difficulty</p>
+                    <div class="guess-dificulty-container">
+                        <div class="guess-dificulry-range guess-dificulry-range-first"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-sec"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-third"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-fourth"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-fifth"></div>
+                    </div>
+                </div>
+                <div class="guess-container guess-container-sec">
+                    <div class="guess-wrapper">
+                        <p class="guess-title guess-title-light">Type your numbers</p>
+                        <p class="guess-desc guess-desc-light">сума чисел має належати вказаному проміжку</p>
+                        <div class="geuss-input-wrapper">
+                            <input class="guess-input" type="text">
+                            <input class="guess-input" type="text">
+                        </div>
+                        <button class="guess-btn guess-btn-first">confirm</button>
+                        <button class="guess-btn">random numbers</button>
+                    </div>
+                    <p class="guess-desc guess-desc-main">Якщо сума введених чисел належить проміжку +1, якщо сума вказаних чисел збігаєтся з випадковим числом з цього проміжку +2.</p>
+                    <div class="guess-wrapper-inside">
+                        <p class="guess-title">Range</p>
+                        <button class="guess-btn guess-btn-range">random range</button>
+                    </div>
+                    <div class="output">
+                        <span id="min-value">25</span><span id="max-value">75</span>
+                    </div>
+                    <div class="range-slider">
+                        <input type="range" min="0" max="100" value="25" id="min-range">
+                        <input type="range" min="0" max="100" value="75" id="max-range">
+                        <div class="slider-track">
+                            <div class="slider-range"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="guess-container guess-container-third">
+                    <p class="guess-title guess-title-third">Points</p>
+                </div>
+                <div class="guess-container guess-container-fourth"> 
+                    <svg class="svg svg-guess" width="240px">
+                        <use href="./symbol-defs.svg#range"></use>
+                    </svg>
+                    <p class="guess-value">0</p>
+                    <p class="guess-desc">numbers that are in the range</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-register">
+            <div class="container">
+
+                <button class="reg-btn" id="reg-btn">Log in | Register</button>
+
+                <div class="reg-container" id="reg-container">
+                    <div class="reg-wrapper" id="reg-wrapper">
+                        <div class="card card-front">
+                            <div class="center-wrap">
+                                <p class="form-title form-title-front">log in</p>
+                                <form action="" class="form form-front">
+                                    <a href="" class="reg-link">
+                                        <input type="text" placeholder="Email" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#mail"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="reg-link">
+                                        <input type="text" placeholder="Password" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#password"></use>
+                                        </svg>
+                                    </a>
+                                </form>
+                                <button class="reg-btn">Log in</button>
+                                <a class="reg-desc" href="#">Forgot your password?</a>
+                            </div>
+                        </div>
+                        <div class="card card-back">
+                            <div class="center-wrap">
+                                <p class="form-title form-title-back">Register</p>
+                                <form action="" class="form form-back">
+                                    <a href="" class="reg-link">
+                                        <input type="text" placeholder="Name" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#user"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="reg-link">
+                                        <input type="text" placeholder="Phone number" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#phone"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="reg-link">
+                                        <input type="text" placeholder="Email" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#mail"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="reg-link">
+                                        <input type="text"  placeholder="Password" class="reg-input">
+                                        <svg class="svg svg-form" width="24" height="24">
+                                            <use href="./symbol-defs.svg#password"></use>
+                                        </svg>
+                                    </a>
+                                </form>
+                                <button class="reg-btn">Register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="./js/slider.js" type="module"></script>
+    <script src="./js/_reg.js" type="module"></script>
+</body>
+</html>

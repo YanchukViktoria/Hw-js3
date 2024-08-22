@@ -1,0 +1,49 @@
+.section-range{
+    padding: 100px;
+}
+
+.range-wrapper{
+    margin-right: 200px;
+}
+
+.circle{
+    position: relative;
+
+    &-path{
+        position: absolute;
+
+        &-first{
+            fill: $set-two-bold;
+        }
+
+        &-sec{
+            left: 82px;
+            bottom: 100px;
+            fill: $set-two-soft;
+        }
+
+        &-third{
+            bottom: 105px;
+            left: 245px;
+            fill: $set-two-pale;
+        }
+
+        &-fourth{
+            left: 323px;
+            fill: $set-two-dark; 
+        }
+
+        &-arr{
+            bottom: 30px;
+            @include positioning(flex, _, _, flex-end, _, _);
+            left: 165px;
+            fill: $set-two-vibrant;
+            z-index: 2;
+
+            &>svg{
+                transform-origin: bottom ;
+                rotate: 270deg;
+            }
+        }
+    }
+}
