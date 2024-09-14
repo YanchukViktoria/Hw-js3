@@ -24,26 +24,29 @@
         <section class="section-word">
             <div class="container">
                 <div class="word-wrapper">
-                    <input placeholder="Palindrome 1" type="text" class="word-input word-input-first">
+                    <input placeholder="Palindrome 1" type="text" class="word-input word-input-first" id="palinfromeFirst">
                 
-                    <input placeholder="Palindrome 2" type="text" class="word-input word-input-sec">
+                    <input placeholder="Palindrome 2" type="text" class="word-input word-input-sec" id="palinfromeSec">
                 </div>
 
-                <button class="word-btn">Check word</button>
+                <button class="word-btn" id="palindromeBtn">Check word</button>
+                <div class="confeti-container">
+                    <img src="./main/confetti.gif" alt="">
+                </div>
             </div>
         </section>
 
         <section class="section-range">
             <div class="container container-range">
                 <div class="range-wrapper">
-                    <input placeholder="Number 1" type="text" class="range-input range-input-first">
-                    <input placeholder="Number 2" type="text" class="range-input range-input-sec">
-                    <button class="range-btn">Enter</button>
+                    <input placeholder="Number 1" type="text" class="range-input range-input-first" id="range-input-first">
+                    <input placeholder="Number 2" type="text" class="range-input range-input-sec" id="range-input-sec">
+                    <button class="range-btn" id="rangeBtn">Enter</button>
                 </div>
 
                 <div class="circle">
                     <div class="circle-path circle-path-arr">
-                        <svg class="svg">
+                        <svg class="svg " id="arr">
                             <use href="./symbol-defs.svg#arr"></use>
                         </svg>
                     </div>
@@ -195,5 +198,7 @@
     </main>
     <script src="./js/slider.js" type="module"></script>
     <script src="./js/_reg.js" type="module"></script>
+    <script src="./js/palindrones.js" type="module"></script>
+    <script src="./js/range.js" type="module"></script>
 </body>
 </html>

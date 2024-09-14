@@ -362,6 +362,14 @@ input[type=range]::-moz-range-thumb {
   margin-bottom: 50px;
 }
 
+.confeti-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .section-range {
   padding: 100px;
 }
