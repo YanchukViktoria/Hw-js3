@@ -42,4 +42,9 @@
     border: none;
     border-bottom: 2px solid white;
     width: 70px;
+    color: white;
+
+    :focus-within{
+        outline: none;
+    }
 }

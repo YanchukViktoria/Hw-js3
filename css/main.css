@@ -121,6 +121,10 @@ img {
   border: none;
   border-bottom: 2px solid white;
   width: 70px;
+  color: white;
+}
+.guess-input :focus-within {
+  outline: none;
 }
 
 .word-btn {
@@ -236,7 +240,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .output {
-  margin: 10px 0 40px 0;
+  margin: 10px 0 20px 0;
   font-size: 18px;
   color: black;
   font-weight: 600;
@@ -363,7 +367,9 @@ input[type=range]::-moz-range-thumb {
 }
 
 .confeti-container {
+  display: none;
   position: absolute;
+  height: 100vh;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -371,7 +377,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .section-range {
-  padding: 100px;
+  padding: 200px 0;
 }
 
 .range-wrapper {
@@ -395,7 +401,7 @@ input[type=range]::-moz-range-thumb {
 .circle-path-third {
   bottom: 105px;
   left: 245px;
-  fill: #A5CB90;
+  fill: #A0DAFF;
 }
 .circle-path-fourth {
   left: 323px;
@@ -460,6 +466,15 @@ input[type=range]::-moz-range-thumb {
   padding: 15px;
 }
 
+.higlight {
+  background-color: #82A649;
+}
+
+[contenteditable=true] {
+  border: 1px solid #82A649;
+  padding: 10px;
+}
+
 .section-guess {
   padding: 100px 0;
 }
@@ -480,6 +495,7 @@ input[type=range]::-moz-range-thumb {
 .guess-container-third {
   grid-column: 1/2;
   grid-row: 2;
+  position: relative;
 }
 .guess-container-fourth {
   position: relative;
@@ -508,6 +524,7 @@ input[type=range]::-moz-range-thumb {
 
 .guess-dificulry-range {
   background-color: #F0992D;
+  opacity: 50%;
   width: 70px;
   border-radius: 24px;
 }

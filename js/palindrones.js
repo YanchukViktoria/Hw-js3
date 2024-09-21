@@ -1,6 +1,8 @@
 
 let btn = document.getElementById("palindromeBtn")
 
+let confeti = document.getElementById("confeti-container");
+
 let strFirstReversed;
 let strSecReversed;
 
@@ -34,5 +36,9 @@ function checkPalindrome(){
     }
     if(strFirstReversed === strSecReversed){
         alert("This is the palindromes!")
+        confeti.style.display = "block";
+        setTimeout(function () {
+            confeti.style.display = "none";
+        }, 3000);
     }
 }

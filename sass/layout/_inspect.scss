@@ -28,3 +28,12 @@
     -10px -10px 20px #ffffff;
     padding: 15px;
 }
+
+.higlight{
+    background-color: $set-five-br;
+}
+
+[contenteditable="true"] {
+    border: 1px solid $set-five-br;
+    padding: 10px;
+}

@@ -34,3 +34,4 @@ minRange.addEventListener("input", updateSlider);
 maxRange.addEventListener("input", updateSlider);
 
 updateSlider();
+

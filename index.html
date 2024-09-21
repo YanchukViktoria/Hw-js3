@@ -30,13 +30,13 @@
                 </div>
 
                 <button class="word-btn" id="palindromeBtn">Check word</button>
-                <div class="confeti-container">
+                <div class="confeti-container" id="confeti-container">
                     <img src="./main/confetti.gif" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="section-range">
+        <section class="section-range" id="section-range">
             <div class="container container-range">
                 <div class="range-wrapper">
                     <input placeholder="Number 1" type="text" class="range-input range-input-first" id="range-input-first">
@@ -75,8 +75,8 @@
         </section>
         <section class="section-inspect">
             <div class="container container-inspect">
-                <textarea class="inspect-textarea" name="" id=""></textarea>
-                <button class="inspect-btn">Inspect</button>
+                <textarea class="inspect-textarea"  name="" id="textarea"></textarea>
+                <button class="inspect-btn" id="inspect-btn">Inspect</button>
             </div>
         </section>
         <section class="section-guess">
@@ -84,11 +84,11 @@
                 <div class="guess-container guess-container-first">
                     <p class="guess-title">Difficulty</p>
                     <div class="guess-dificulty-container">
-                        <div class="guess-dificulry-range guess-dificulry-range-first"></div>
-                        <div class="guess-dificulry-range guess-dificulry-range-sec"></div>
-                        <div class="guess-dificulry-range guess-dificulry-range-third"></div>
-                        <div class="guess-dificulry-range guess-dificulry-range-fourth"></div>
-                        <div class="guess-dificulry-range guess-dificulry-range-fifth"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-first" id="guess-dificulry-range-first"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-sec" id="guess-dificulry-range-sec"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-third" id="guess-dificulry-range-third"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-fourth" id="guess-dificulry-range-fourth"></div>
+                        <div class="guess-dificulry-range guess-dificulry-range-fifth" id="guess-dificulry-range-fifth"></div>
                     </div>
                 </div>
                 <div class="guess-container guess-container-sec">
@@ -96,10 +96,10 @@
                         <p class="guess-title guess-title-light">Type your numbers</p>
                         <p class="guess-desc guess-desc-light">сума чисел має належати вказаному проміжку</p>
                         <div class="geuss-input-wrapper">
-                            <input class="guess-input" type="text">
-                            <input class="guess-input" type="text">
+                            <input class="guess-input" id="guess-input-first" type="text">
+                            <input class="guess-input" id="guess-input-sec" type="text">
                         </div>
-                        <button class="guess-btn guess-btn-first">confirm</button>
+                        <button class="guess-btn guess-btn-first" id="confirm-btn">confirm</button>
                         <button class="guess-btn">random numbers</button>
                     </div>
                     <p class="guess-desc guess-desc-main">Якщо сума введених чисел належить проміжку +1, якщо сума вказаних чисел збігаєтся з випадковим числом з цього проміжку +2.</p>
@@ -118,14 +118,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="guess-container guess-container-third">
+                <div class="guess-container guess-container-third" id="coins-container">
                     <p class="guess-title guess-title-third">Points</p>
+
                 </div>
                 <div class="guess-container guess-container-fourth"> 
                     <svg class="svg svg-guess" width="240px">
                         <use href="./symbol-defs.svg#range"></use>
                     </svg>
-                    <p class="guess-value">0</p>
+                    <p class="guess-value" id="guess-value-range">0</p>
                     <p class="guess-desc">numbers that are in the range</p>
                 </div>
             </div>
@@ -141,20 +142,20 @@
                             <div class="center-wrap">
                                 <p class="form-title form-title-front">log in</p>
                                 <form action="" class="form form-front">
-                                    <a href="" class="reg-link">
-                                        <input type="text" placeholder="Email" class="reg-input">
+                                    <span href="" class="reg-link">
+                                        <input type="text" placeholder="Email" class="reg-input reg-input-mail" id="reg-input-mail-log">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#mail"></use>
                                         </svg>
-                                    </a>
-                                    <a href="" class="reg-link">
-                                        <input type="text" placeholder="Password" class="reg-input">
+                                    </span>
+                                    <span href="" class="reg-link">
+                                        <input type="text" placeholder="Password" class="reg-input" id="reg-input-password-log">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#password"></use>
                                         </svg>
-                                    </a>
+                                    </span>
                                 </form>
-                                <button class="reg-btn">Log in</button>
+                                <button class="reg-btn" id="login-btn">Log in</button>
                                 <a class="reg-desc" href="#">Forgot your password?</a>
                             </div>
                         </div>
@@ -162,32 +163,32 @@
                             <div class="center-wrap">
                                 <p class="form-title form-title-back">Register</p>
                                 <form action="" class="form form-back">
-                                    <a href="" class="reg-link">
-                                        <input type="text" placeholder="Name" class="reg-input">
+                                    <span href="" class="reg-link">
+                                        <input type="text" placeholder="Name" class="reg-input" id="reg-input-name-reg">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#user"></use>
                                         </svg>
-                                    </a>
-                                    <a href="" class="reg-link">
+                                    </span>
+                                    <span href="" class="reg-link">
                                         <input type="text" placeholder="Phone number" class="reg-input">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#phone"></use>
                                         </svg>
-                                    </a>
-                                    <a href="" class="reg-link">
-                                        <input type="text" placeholder="Email" class="reg-input">
+                                    </span>
+                                    <span href="" class="reg-link">
+                                        <input type="text" placeholder="Email" class="reg-input reg-input-mail" id="reg-input-mail-reg">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#mail"></use>
                                         </svg>
-                                    </a>
-                                    <a href="" class="reg-link">
-                                        <input type="text"  placeholder="Password" class="reg-input">
+                                    </span>
+                                    <span href="" class="reg-link">
+                                        <input type="text"  placeholder="Password" class="reg-input" id="reg-input-password-reg">
                                         <svg class="svg svg-form" width="24" height="24">
                                             <use href="./symbol-defs.svg#password"></use>
                                         </svg>
-                                    </a>
+                                    </span>
                                 </form>
-                                <button class="reg-btn">Register</button>
+                                <button class="reg-btn" id="regist-btn">Register</button>
                             </div>
                         </div>
                     </div>
@@ -200,5 +201,7 @@
     <script src="./js/_reg.js" type="module"></script>
     <script src="./js/palindrones.js" type="module"></script>
     <script src="./js/range.js" type="module"></script>
+    <script src="./js/inspect.js" type="module"></script>
+    <script src="./js/guess.js" type="module"></script>
 </body>
 </html>
